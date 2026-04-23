@@ -1,0 +1,258 @@
+/* Seleção de cores*/
+
+:root {
+    --cor-principal: #50BED2;
+    --cor-secundaria: #005082;
+    --cor-clara: #5AC8D2;
+    --cor-fundo: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+/* Imagem capa topo */
+.imagem-capa {
+    width: 100%;
+    height: auto;
+    
+}
+
+#titulo-principal {
+    text-align: center;
+    font-size: 70px;
+    color: var(--cor-secundaria);
+}
+
+.slogan {
+    
+    text-align: center;
+    color: var(--cor-secundaria);
+    padding: 15px;
+}
+
+.slogan h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Tela inicial Boas vindas */
+.boas-vindas {
+    
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* Menu navegação */
+nav {
+    background-color: var(--cor-principal);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* Fotos estrutura */
+h3.estrutura {
+    text-align: center;
+    font-size: 28px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 40px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+img.estrutura {
+    padding: 10px;
+}
+
+/* Comentário */
+.nos {
+    text-align: center;
+    font-size: 28px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 40px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.comentario {
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Colunas - Serviços ,Estrutura, Sobre Nós*/
+.colunas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.colunas section {
+    flex: 1;
+    text-align: left;
+}
+
+.colunas h2 {
+    font-size: 1.6rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 12px;
+}
+
+.colunas p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 2px 0;
+}
+
+.colunas strong p {
+    color: #222;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Local Noticias*/
+
+.noticias-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+}
+
+.noticias {
+   text-align: center;
+    font-size: 28px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 40px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    
+}
+
+.noticias-wrapper section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.noticias-wrapper a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.noticias-wrapper a:hover {
+    text-decoration: underline;
+    color: var(--cor-principal);
+}
+/* Local Contato */
+
+.contato-wrapper {
+    text-align: center;
+    padding: 40px;
+    background-color:var(--cor-secundaria);
+    color: var(--cor-fundo);
+    margin-top: 40px;
+}
+
+.agendar-consulta {
+    color: var(--cor-fundo);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contato-wrapper h3 {
+    margin: 10px 0;
+}
+
+.contato-wrapper h3 a {
+    color:var(--cor-fundo);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.contato-wrapper h3 a:hover {
+    color: var(--cor-principal);
+}
+
+.rodapé {
+    text-align: center;
+    padding: 20px;
+    background-color: #F2F0EF;
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+}
+.rodapé {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #F2F0EF;
+    color: var(--cor-secundaria);
+    font-size: 0.8rem;
+}
+
+.footer-icones {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icones a {
+    color:var(--cor-secundaria);
+    font-size: 2rem;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.footer-icones a:hover {
+    color: var(--cor-clara);
+}
+
+.footer-mapa {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-mapa iframe {
+    border-radius: 8px;
+    max-width: 50%;
+}
