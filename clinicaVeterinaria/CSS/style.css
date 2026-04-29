@@ -234,7 +234,23 @@ a{
         order:1;
     }
 
+    .card1, .card2, .card3 {
+    display: column;
+    justify-content: center;
+    gap: 20px;                      
+    margin-bottom: 20px;
+    flex-wrap: wrap;}
+
+    .form1, .direita {
+        padding: 20px;      
+        border-radius: 15px;
+    }
+
+    .pagina-agendamento h1 {
+        font-size: 1.8rem;  
+    }
 }
+
 
 #informacoes {
     display: flex;
@@ -460,14 +476,49 @@ strong{
     margin-bottom: 30px;
 }
 
-/* cada serviço */
+.card1, .card2, .card3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;                      
+    margin-bottom: 20px;
+}
+
+
 .item-servico {
+    display: flex;        
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: space-between; 
+    
+    width: 100%;
+    max-width: 280px;       
+    min-height: 320px;      
+    
     background-color: #ffffff;
     border: 1px solid var(--cor-principal);
     border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;    
+}
+
+/* Ajuste do botão dentro do card */
+.item-servico .buttonContato {
+    margin-top: auto;      
+    width: 100%;           
+    max-width: 200px;
+}
+
+/* Ajuste para o texto dentro do card */
+.item-servico p {
+    margin: 10px 0;
+}
+
+.imgCa {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 /* efeito ao passar o mouse */
@@ -482,119 +533,133 @@ strong{
 
 .item-servico p {
     margin: 5px 0;
+    align-items: center;
 }
 
+.item-servico strong{
+    text-align: center;
+}
+
+.item-servico textCard{
+    text-align: center;
+}
 /* título */
 h1 {
   text-align: center;
   color: #5bc0de;
 }
 
-/* layout */
-.principal {
-  display: flex;
-}
-
-/* caixas */
-.esquerda, .direita {
-  background-color: white;
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-
-/* formulário */
-.esquerda {
-  width: 60%;
-}
-
-/* frete */
-.direita {
-  width: 40%;
-  margin-left: 20px;
-}
-
-/* subtítulos */
-h2 {
-  color: #5bc0de;
-}
-
-/* inputs */
-input, select {
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-}
-
-/* botão */
-button {
-  padding: 8px;
-  background-color: #5bc0de;
-  color: white;
-  border: none;
-}
-
-/* mapa */
-.mapa {
-  margin-top: 20px;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-}
-.mapa {
-  width: 100%;
-  margin-top: 20px;
-  clear: both; /* força ir pra baixo */
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 350px;
-  display: block;
-}
-/* deixa o frete maior */
-.direita {
-  width: 35%;
-  min-width: 300px; /* impede de ficar muito estreito */
-}
-
-/* faz os inputs ocuparem tudo */
-.direita input,
-.direita select {
-  width: 100%;
-}
-
-/* botão mais alinhado */
-.direita button {
-  width: 100%;
-}
-.rodape {
+.pagina-agendamento h1 {
+    display: column;
   text-align: center;
-  margin-top: 20px;
-  color: #5bc0de; /* mesmo azul do site */
+  color: var(--cor-principal);
+  margin-bottom: 30px;
 }
 
-/* faz os dois ficarem iguais */
-.esquerda, .direita {
-  width: 50%;
+.pagina-agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* garante que o frete use todo espaço */
-.direita form {
-  width: 100%;
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 40px;              
+    width: 100%;
+    max-width: 800px;      
+    margin: 0 auto;
 }
 
-/* inputs ocupam tudo */
-.direita input,
-.direita select,
-.direita button {
-  width: 100%;
+
+.form1, .direita {
+   background-color: var(--cor-principal);
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;           
+    box-sizing: border-box; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.direita form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* fica tudo no topo */
+
+
+.formCadastro, .direita form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formCadastro h2, .direita h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 12px; 
+    outline: none;
+}
+
+
+.sexo {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.sexo label {
+    margin-top: 0;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button[type="reset"], 
+button[type="button"] {
+    margin-top: 25px;
+    padding: 12px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="reset"]:hover, 
+button[type="button"]:hover {
+    background-color: #ffffff;
+    color: var(--cor-principal);
+}
+
+#resultado {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input, select, button {
+    max-width: 100%;
 }
