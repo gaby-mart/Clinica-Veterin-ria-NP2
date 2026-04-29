@@ -24,6 +24,67 @@
         </nav>
         </header>
 
+         <h1>Cadastro de Pet</h1>
+ 
+  <form action="" method="post">
+ 
+    <h2>Dados do Tutor</h2>
+ 
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+ 
+    <label for="tel">Telefone:</label><br>
+    <input type="tel" id="tel" name="telefone"><br>
+ 
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email"><br>
+ 
+    <h2>Dados do Pet</h2>
+ 
+    <label for="nomepet">Nome do pet:</label><br>
+    <input type="text" id="nomepet" name="nome_pet"><br>
+ 
+    <label for="especie">Espécie:</label><br>
+    <select id="especie" name="especie">
+      <option value="" disabled selected>Selecione...</option>
+      <option value="cao">Cão</option>
+      <option value="gato">Gato</option>
+    </select><br>
+ 
+    <label for="nasc">Data de nascimento:</label><br>
+    <input type="date" id="nascimento" name="data_nascimento" required><br>
+ 
+    <label>Sexo:</label><br>
+    <input type="radio" id="macho" name="sexo" value="macho" required>
+    <label for="macho">Macho</label>
+    <input type="radio" id="femea" name="sexo" value="femea">
+    <label for="femea">Fêmea</label><br>
+ 
+    <button type="reset">Limpar</button>
+    <button type="submit">Cadastrar pet</button>
+ 
+  </form><br>
+
+  <h1>Frete Taxi Dog</h1>
+ 
+  <form action="" method="post">
+ 
+    <label for="cep">CEP:</label><br>
+    <input type="text" id="cep" name="cep"><br>
+ 
+    <label for="rua">Nome da rua:</label><br>
+    <input type="text" id="rua" name="rua"><br>
+ 
+    <label for="km">Distância aproximada (km):</label><br>
+    <input type="number" id="km" name="km"><br>
+ 
+    <label for="valor">Valor do frete (R$):</label><br>
+    <input type="text" id="valor" name="valor" placeholder="R$ 0,00" readonly><br><br>
+ 
+    <button type="button" id="btnCalcular">Calcular frete</button>
+ 
+  </form>
+
         <h2 class="contato">Contato</h2>
 
         <h3><a href="tel+5519922216994"> Whatsapp </a></h3>
@@ -39,12 +100,7 @@
             <a href="https://www.instagram.com/afettovet/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
             </a>
-        </div>
-
-    <div class="footer-mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.5382850676738!2d-47.0913777!3d-22.930394899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c97112f33e1b%3A0xd06f48d0e1787ab!2sAFETTO%20-%20Centro%20Veterin%C3%A1rio%20Popular%20Afetto!5e0!3m2!1spt-BR!2sbr!4v1776483448032!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-        
+        </div> 
         <strong><p>&copy; 2026 Centro Veterinário Popular Afetto. Todos os direitos reservados</p></strong>
 
     </footer>
