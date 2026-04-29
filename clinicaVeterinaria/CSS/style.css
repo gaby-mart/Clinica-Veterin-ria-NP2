@@ -446,3 +446,155 @@ strong{
     max-width: 700px;
     margin: 20px auto 0 auto;
     }
+/* Página Serviços  */
+
+.pagina-servicos {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pagina-servicos h2 {
+    text-align: center;
+    color: var(--cor-principal);
+    margin-bottom: 30px;
+}
+
+/* cada serviço */
+.item-servico {
+    background-color: #ffffff;
+    border: 1px solid var(--cor-principal);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* efeito ao passar o mouse */
+.item-servico:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-servico strong {
+    color: var(--cor-principal);
+}
+
+.item-servico p {
+    margin: 5px 0;
+}
+
+/* título */
+h1 {
+  text-align: center;
+  color: #5bc0de;
+}
+
+/* layout */
+.principal {
+  display: flex;
+}
+
+/* caixas */
+.esquerda, .direita {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* formulário */
+.esquerda {
+  width: 60%;
+}
+
+/* frete */
+.direita {
+  width: 40%;
+  margin-left: 20px;
+}
+
+/* subtítulos */
+h2 {
+  color: #5bc0de;
+}
+
+/* inputs */
+input, select {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* botão */
+button {
+  padding: 8px;
+  background-color: #5bc0de;
+  color: white;
+  border: none;
+}
+
+/* mapa */
+.mapa {
+  margin-top: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+.mapa {
+  width: 100%;
+  margin-top: 20px;
+  clear: both; /* força ir pra baixo */
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+/* deixa o frete maior */
+.direita {
+  width: 35%;
+  min-width: 300px; /* impede de ficar muito estreito */
+}
+
+/* faz os inputs ocuparem tudo */
+.direita input,
+.direita select {
+  width: 100%;
+}
+
+/* botão mais alinhado */
+.direita button {
+  width: 100%;
+}
+.rodape {
+  text-align: center;
+  margin-top: 20px;
+  color: #5bc0de; /* mesmo azul do site */
+}
+
+/* faz os dois ficarem iguais */
+.esquerda, .direita {
+  width: 50%;
+}
+
+/* garante que o frete use todo espaço */
+.direita form {
+  width: 100%;
+}
+
+/* inputs ocupam tudo */
+.direita input,
+.direita select,
+.direita button {
+  width: 100%;
+}
+.direita form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* fica tudo no topo */
+}
